@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 th:text="urlMapping"></h1>
+    <img th:src="@{img/lemon.jpg}" alt="레몬">
+    <br/>
+    <a th:href="@{sub/test2}">sub/test2 이동</a>
+    <a th:href="@{sub/test3}">sub/test3 이동</a>
+    <form method="post" action="sub/test4">
+        id : <input type="text" name="id"><br/>
+        <button type="submit">Click</button>
+    </form>
+</body>
+</html>
